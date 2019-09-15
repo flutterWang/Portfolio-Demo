@@ -1,12 +1,13 @@
-import 'package:flutter_web/material.dart';
-import 'package:portfolio/constants/assets.dart';
-import 'package:portfolio/constants/fonts.dart';
-import 'package:portfolio/constants/strings.dart';
-import 'package:portfolio/constants/text_styles.dart';
-import 'package:portfolio/models/education.dart';
-import 'package:portfolio/utils/screen/screen_utils.dart';
-import 'package:portfolio/widgets/responsive_widget.dart';
+import 'package:flutter/material.dart';
 import 'dart:html' as html;
+
+import '../constants/assets.dart';
+import '../constants/fonts.dart';
+import '../constants/strings.dart';
+import '../constants/text_styles.dart';
+import '../models/education.dart';
+import '../utils/screen.dart';
+import '../widgets/responsive.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -76,20 +77,20 @@ class HomePage extends StatelessWidget {
         ),
         onPressed: () {},
       ),
-      MaterialButton(
-        child: Text(
-          Strings.menu_about,
-          style: TextStyles.menu_item,
-        ),
-        onPressed: () {},
-      ),
-      MaterialButton(
-        child: Text(
-          Strings.menu_contact,
-          style: TextStyles.menu_item,
-        ),
-        onPressed: () {},
-      ),
+      // MaterialButton(
+      //   child: Text(
+      //     Strings.menu_about,
+      //     style: TextStyles.menu_item,
+      //   ),
+      //   onPressed: () {},
+      // ),
+      // MaterialButton(
+      //   child: Text(
+      //     Strings.menu_contact,
+      //     style: TextStyles.menu_item,
+      //   ),
+      //   onPressed: () {},
+      // ),
     ];
   }
 
@@ -181,7 +182,7 @@ class HomePage extends StatelessWidget {
   // Body Methods:--------------------------------------------------------------
   Widget _buildIllustration() {
     return Image.network(
-      Assets.programmer3,
+      Assets.programmer,
       height: ScreenUtil.getInstance().setWidth(345), //480.0
     );
   }

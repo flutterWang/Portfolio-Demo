@@ -1,7 +1,7 @@
-import 'package:flutter_web/material.dart';
-import 'package:portfolio/ui/home.dart';
+import 'package:flutter/material.dart';
 
-import 'package:portfolio/utils/screen/screen_utils.dart';
+import './page/home.dart';
+import './utils/screen.dart';
 
 void main() {
   runApp(MyApp());

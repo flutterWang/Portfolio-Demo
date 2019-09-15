@@ -1,5 +1,6 @@
-import 'package:flutter_web/material.dart';
-import 'package:portfolio/constants/fonts.dart';
+import 'package:flutter/material.dart';
+
+import './fonts.dart';
 
 class TextStyles {
   TextStyles._();
